@@ -1,3 +1,4 @@
+/* Konversi Celcius ke Fahrenheit */
 document.getElementById('konversi').onclick = tempConvert;
 function tempConvert(event){
     event.preventDefault();
@@ -18,14 +19,14 @@ function tempConvert(event){
     document.getElementById('cara-kalkulasi').value = `(9/5 x ${inputCelcius}°) + 32 = ${fahrenheit}°` ;
     document.getElementById("titleKonversi").innerHTML = "Cara Konversi dari Celsius (°C) ke Fahrenheit (°F)";
 }
-
+/* Reset Code */
 document.getElementById('reset').onclick = formReset;
 function formReset(){
     document.getElementById('celcius').value ='';
     document.getElementById('fahrenheit').value ='';
     document.getElementById('cara-kalkulasi').value = '' ;
 }
-
+/* Reverse Code */
 document.getElementById('reverse').onclick = tempReverse;
 function tempReverse(event){
     event.preventDefault();
